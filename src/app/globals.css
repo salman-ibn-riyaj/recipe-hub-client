@@ -1,0 +1,158 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+@variant dark (&:where(.dark, .dark *));
+
+
+:root {
+  /* Background & Text */
+  --background: #f8fff8;
+  --foreground: #1f2937;
+  --surface: #ffffff;
+
+  /* Brand Colors */
+  --primary: #4caf50;
+  --primary-foreground: #ffffff;
+  
+  --secondary: #81c784;
+  --secondary-foreground: #ffffff;
+  
+  --accent: #a5d6a7;
+  --accent-foreground: #1f2937;
+  
+  --mint: #e8f5e9;
+  --mint-foreground: #2e7d32;
+
+  /* Status Colors */
+  --success: #2e7d32;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* UI Colors */
+  --card: #ffffff;
+  --border: #dcefd9;
+  --muted: #6b7280;
+  --muted-foreground: #6b7280;
+}
+
+.dark {
+  /* Dark mode theme */
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --surface: #1e293b;
+
+  --primary: #4ade80;
+  --primary-foreground: #022c22;
+  
+  --secondary: #22c55e;
+  --secondary-foreground: #ffffff;
+  
+  --accent: #166534;
+  --accent-foreground: #f1f5f9;
+  
+  --mint: #064e3b;
+  --mint-foreground: #a7f3d0;
+
+  --success: #4ade80;
+  --warning: #fbbf24;
+  --danger: #f87171;
+
+  --card: #1e293b;
+  --border: #334155;
+  --muted: #475569;
+  --muted-foreground: #94a3b8;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  
+  --color-mint: var(--mint);
+  --color-mint-foreground: var(--mint-foreground);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  
+  --shadow-soft: 0 4px 20px rgba(76, 175, 80, 0.08);
+  --shadow-hover: 0 10px 25px rgba(76, 175, 80, 0.15);
+}
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+}
+
+.active {
+  background-color: var(--mint);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(220, 239, 217, 0.5);
+}
+
+.dark .glass {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 5s linear infinite;
+}
+
+/* Float animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

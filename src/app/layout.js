@@ -1,0 +1,38 @@
+import { Outfit, Radio_Canada } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider } from "next-themes";
+import ToastProvider from "./components/ToastProvider";
+import Footer from "./components/Footer";
+import SmoothScrollProvider from "./components/SmoothScrollProvider";
+
+const radioCanada = Radio_Canada({
+  variable: "--font-Radio-Canada",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+export const metadata = {
+  title: "RecipeHub",
+  description: "Best Place For User Recipe",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    
+    <html
+      suppressHydrationWarning
+      lang="en"
+      className={`${radioCanada.variable} h-full antialiased`}
+    >
+      <body className={`font-Radio-Canada bg-background text-foreground min-h-full flex flex-col ${radioCanada.className}`}>
+        {}
+        <ThemeProvider attribute="class" defaultTheme="light">
+          <SmoothScrollProvider>
+            <ToastProvider />
+            {children}
+          </SmoothScrollProvider>
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
