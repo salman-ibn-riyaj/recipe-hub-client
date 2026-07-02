@@ -32,7 +32,7 @@ const Footer = () => {
               <a href="https://www.facebook.com/salmanshahibneriyaj" className="p-2.5 bg-white text-primary dark:bg-slate-800 dark:text-indigo-300 rounded-xl hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
                 <LogoFacebook size={18} />
               </a>
-              <a href="" className="p-2.5 bg-white text-primary dark:bg-slate-800 dark:text-indigo-300 rounded-xl hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
+              <a href="https://x.com/salmanshahrz" className="p-2.5 bg-white text-primary dark:bg-slate-800 dark:text-indigo-300 rounded-xl hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
                 <X size={18} />
               </a>
               <a href="https://www.linkedin.com/in/salman-ibn-riyaj" className="p-2.5 bg-white text-primary dark:bg-slate-800 dark:text-indigo-300 rounded-xl hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
