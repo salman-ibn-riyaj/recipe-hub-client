@@ -90,3 +90,26 @@ npm install
 ```
 
 ---
+# 🔑 Environment Variables
+
+Create a `.env.local` file and add the following variables:
+
+```env
+MONGODB_URI=
+
+BETTER_AUTH_SECRET=
+
+BETTER_AUTH_URL=
+
+GOOGLE_CLIENT_ID=
+
+GOOGLE_CLIENT_SECRET=
+
+STRIPE_SECRET_KEY=
+
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+
+NEXT_PUBLIC_BASE_URL=
+```
+
+---
