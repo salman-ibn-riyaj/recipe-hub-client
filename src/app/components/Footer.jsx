@@ -29,10 +29,10 @@ const Footer = () => {
               Your premium destination for discovering, sharing, and creating delicious healthy recipes. Join our community and elevate your everyday cooking.
             </p>
             <div className="flex space-x-4 pt-2">
-              <a href="" className="p-2.5 bg-white text-primary dark:bg-slate-800 dark:text-indigo-300 rounded-xl hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
+              <a href="https://www.facebook.com/salmanshahibneriyaj" className="p-2.5 bg-white text-primary dark:bg-slate-800 dark:text-indigo-300 rounded-xl hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
                 <LogoFacebook size={18} />
               </a>
-              <a href="#" className="p-2.5 bg-white text-primary dark:bg-slate-800 dark:text-indigo-300 rounded-xl hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
+              <a href="" className="p-2.5 bg-white text-primary dark:bg-slate-800 dark:text-indigo-300 rounded-xl hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
                 <X size={18} />
               </a>
               <a href="https://www.linkedin.com/in/salman-ibn-riyaj" className="p-2.5 bg-white text-primary dark:bg-slate-800 dark:text-indigo-300 rounded-xl hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
