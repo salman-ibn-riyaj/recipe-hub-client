@@ -113,3 +113,16 @@ NEXT_PUBLIC_BASE_URL=
 ```
 
 ---
+# ▶️ Run Development Server
+
+```bash
+npm run dev
+```
+
+Visit:
+
+```text
+http://localhost:3000
+```
+
+---
