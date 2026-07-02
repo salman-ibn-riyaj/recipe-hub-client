@@ -170,4 +170,12 @@ git push origin feature-name
 5. Open a Pull Request
 
 ---
+# 👨‍💻 Author
+
+**Salman Ibn Riyaj**
+
+- GitHub: https://github.com/salman-ibn-riyaj
+- LinkedIn: https://www.linkedin.com/
+
+---
 
