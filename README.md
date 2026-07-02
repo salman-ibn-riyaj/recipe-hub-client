@@ -126,3 +126,18 @@ http://localhost:3000
 ```
 
 ---
+# 📦 Build Project
+
+```bash
+npm run build
+```
+
+---
+
+# 🚀 Start Production
+
+```bash
+npm start
+```
+
+---
