@@ -29,3 +29,24 @@ RecipeHub is a modern full-stack recipe sharing platform where food lovers can d
 - ⚡ Fast Performance with Next.js App Router
 
 ---
+# 🛠️ Tech Stack
+
+## Frontend
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Shadcn UI
+- Lucide React
+
+  
+## Payment
+
+- Stripe
+
+## Deployment
+
+- Vercel
+
+---
