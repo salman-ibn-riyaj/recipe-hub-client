@@ -12,4 +12,20 @@ RecipeHub is a modern full-stack recipe sharing platform where food lovers can d
 | ⚙️ Server API | https://recipe-hub-server-theta.vercel.app |
 
 ---
+# ✨ Features
 
+- 🔐 Secure Authentication with Better Auth
+- 👤 User Profile Management
+- 🍳 Create, Update & Delete Recipes
+- 📖 View Detailed Recipe Information
+- ❤️ Like Favorite Recipes
+- 🔍 Search Recipes
+- 🏷️ Filter Recipes by Category & Cuisine
+- ⭐ Featured Recipes
+- 🔥 Most Liked Recipes
+- 💳 Premium Membership with Stripe
+- 📱 Fully Responsive Design
+- 🎨 Modern UI built with Tailwind CSS
+- ⚡ Fast Performance with Next.js App Router
+
+---
