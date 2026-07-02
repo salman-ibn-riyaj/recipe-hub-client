@@ -5,54 +5,54 @@
 
 :root {
   /* Background & Text */
-  --background: #f8fff8;
-  --foreground: #1f2937;
+  --background: #f8fafc;
+  --foreground: #0f172a;
   --surface: #ffffff;
 
-  /* Brand Colors */
-  --primary: #4caf50;
+  /* Brand Colors - Indigo/Slate */
+  --primary: #6366f1;
   --primary-foreground: #ffffff;
   
-  --secondary: #81c784;
+  --secondary: #818cf8;
   --secondary-foreground: #ffffff;
   
-  --accent: #a5d6a7;
-  --accent-foreground: #1f2937;
+  --accent: #a5b4fc;
+  --accent-foreground: #1e293b;
   
-  --mint: #e8f5e9;
-  --mint-foreground: #2e7d32;
+  --mint: #eef2ff;
+  --mint-foreground: #4338ca;
 
   /* Status Colors */
-  --success: #2e7d32;
+  --success: #10b981;
   --warning: #f59e0b;
   --danger: #ef4444;
 
   /* UI Colors */
   --card: #ffffff;
-  --border: #dcefd9;
-  --muted: #6b7280;
-  --muted-foreground: #6b7280;
+  --border: #e2e8f0;
+  --muted: #64748b;
+  --muted-foreground: #64748b;
 }
 
 .dark {
   /* Dark mode theme */
   --background: #0f172a;
-  --foreground: #f1f5f9;
+  --foreground: #f8fafc;
   --surface: #1e293b;
 
-  --primary: #4ade80;
-  --primary-foreground: #022c22;
+  --primary: #818cf8;
+  --primary-foreground: #0f172a;
   
-  --secondary: #22c55e;
+  --secondary: #6366f1;
   --secondary-foreground: #ffffff;
   
-  --accent: #166534;
-  --accent-foreground: #f1f5f9;
+  --accent: #4f46e5;
+  --accent-foreground: #f8fafc;
   
-  --mint: #064e3b;
-  --mint-foreground: #a7f3d0;
+  --mint: #1e1b4b;
+  --mint-foreground: #a5b4fc;
 
-  --success: #4ade80;
+  --success: #34d399;
   --warning: #fbbf24;
   --danger: #f87171;
 
@@ -88,8 +88,8 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   
-  --shadow-soft: 0 4px 20px rgba(76, 175, 80, 0.08);
-  --shadow-hover: 0 10px 25px rgba(76, 175, 80, 0.15);
+  --shadow-soft: 0 1px 3px 0 rgb(99 102 241 / 0.08), 0 1px 2px -1px rgb(99 102 241 / 0.06);
+  --shadow-hover: 0 10px 25px -5px rgb(99 102 241 / 0.12), 0 4px 10px -6px rgb(99 102 241 / 0.08);
 }
 
 html {
@@ -119,7 +119,7 @@ body {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(220, 239, 217, 0.5);
+  border: 1px solid rgba(226, 232, 240, 0.5);
 }
 
 .dark .glass {

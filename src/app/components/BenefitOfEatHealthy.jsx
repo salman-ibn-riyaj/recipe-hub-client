@@ -22,9 +22,9 @@ const benefits = [
     title: "Heart Health",
     description:
       "A diet rich in fruits, vegetables, and whole grains helps lower blood pressure, reduce cholesterol, and cut the risk of heart disease by up to 30%.",
-    color: "text-rose-500",
-    bgColor: "bg-rose-50 dark:bg-rose-500/10",
-    borderColor: "border-rose-200 dark:border-rose-500/20",
+    color: "text-primary",
+    bgColor: "bg-mint",
+    borderColor: "border-primary/20",
   },
   {
     icon: Apple,
@@ -49,9 +49,9 @@ const benefits = [
     title: "Sustained Energy",
     description:
       "Complex carbs, lean proteins, and healthy fats provide steady energy throughout the day — no more sugar crashes or mid-afternoon slumps.",
-    color: "text-amber-500",
-    bgColor: "bg-amber-50 dark:bg-amber-500/10",
-    borderColor: "border-amber-200 dark:border-amber-500/20",
+    color: "text-secondary",
+    bgColor: "bg-indigo-50 dark:bg-indigo-500/10",
+    borderColor: "border-indigo-200 dark:border-indigo-500/20",
   },
   {
     icon: Shield,
@@ -94,7 +94,7 @@ const benefits = [
     title: "Restful Sleep",
     description:
       "Nutrients like magnesium, tryptophan, and melatonin from healthy foods regulate sleep cycles, helping you fall asleep faster and wake up refreshed.",
-    color: "text-indigo-500",
+    color: "text-accent",
     bgColor: "bg-indigo-50 dark:bg-indigo-500/10",
     borderColor: "border-indigo-200 dark:border-indigo-500/20",
   },
@@ -103,9 +103,9 @@ const benefits = [
     title: "Longevity & Vitality",
     description:
       "A balanced diet reduces inflammation, slows cellular aging, and lowers the risk of chronic diseases — adding years to your life and life to your years.",
-    color: "text-green-600",
-    bgColor: "bg-green-50 dark:bg-green-500/10",
-    borderColor: "border-green-200 dark:border-green-500/20",
+    color: "text-emerald-600",
+    bgColor: "bg-emerald-50 dark:bg-emerald-500/10",
+    borderColor: "border-emerald-200 dark:border-emerald-500/20",
   },
 ];
 
@@ -146,7 +146,7 @@ const BenefitOfEatHealthy = () => {
     <section className="relative overflow-hidden bg-gradient-to-b from-background via-mint/30 to-background py-20 px-4 sm:px-6 lg:px-8">
       {/* Decorative background blurs */}
       <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-80 h-80 rounded-full bg-secondary/10 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 rounded-full bg-primary/[0.04] blur-3xl pointer-events-none" />
       <div className="absolute top-1/3 right-10 w-64 h-64 rounded-full bg-accent/10 blur-3xl pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
@@ -163,7 +163,7 @@ const BenefitOfEatHealthy = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 rounded-full bg-mint border border-primary/20 px-4 py-1.5 shadow-sm"
+            className="inline-flex items-center gap-2 rounded-xl bg-mint border border-primary/20 px-4 py-1.5 shadow-sm"
           >
             <Salad className="w-4 h-4 text-primary" />
             <span className="text-sm font-semibold text-primary">
@@ -173,7 +173,7 @@ const BenefitOfEatHealthy = () => {
 
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-foreground">
             Benefits of{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               Eating Healthy
             </span>
           </h2>
@@ -205,9 +205,9 @@ const BenefitOfEatHealthy = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="relative group bg-surface rounded-2xl border border-border shadow-soft p-5 md:p-6 text-center hover:shadow-hover hover:-translate-y-1 transition-all duration-300"
+              className="relative group bg-surface rounded-xl border border-border/70 shadow-soft p-5 md:p-6 text-center hover:shadow-hover hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] to-transparent rounded-2xl pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] to-transparent rounded-xl pointer-events-none" />
               <div className="relative z-10">
                 <span className="block text-3xl md:text-4xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   {stat.value}
@@ -234,11 +234,11 @@ const BenefitOfEatHealthy = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="group bg-surface rounded-2xl border border-border shadow-soft p-6 hover:shadow-hover hover:-translate-y-1 transition-all duration-300 relative overflow-hidden"
-              >
-                {/* Icon circle */}
-                <div
-                  className={`w-12 h-12 rounded-xl ${benefit.bgColor} ${benefit.borderColor} border flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
+              className="group bg-surface rounded-xl border border-border/70 shadow-soft p-6 hover:shadow-hover hover:-translate-y-1 transition-all duration-300 relative overflow-hidden"
+            >
+              {/* Icon circle */}
+              <div
+                className={`w-12 h-12 rounded-lg ${benefit.bgColor} ${benefit.borderColor} border flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
                 >
                   <Icon className={`w-6 h-6 ${benefit.color}`} />
                 </div>
@@ -265,15 +265,14 @@ const BenefitOfEatHealthy = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="mt-16 bg-surface rounded-3xl border border-border shadow-soft p-8 md:p-10 relative overflow-hidden"
+          viewport={{ once: true }}            className="mt-16 bg-surface rounded-2xl border border-border/70 shadow-soft p-8 md:p-10 relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 w-48 h-48 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 left-0 w-32 h-32 bg-secondary/5 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative z-10">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-2 h-8 bg-gradient-to-b from-primary to-secondary rounded-full" />
+              <div className="w-2 h-8 bg-gradient-to-b from-primary to-secondary rounded-md" />
               <h3 className="text-2xl font-bold text-foreground">
                 Quick Tips to Get Started
               </h3>

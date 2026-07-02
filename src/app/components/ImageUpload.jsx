@@ -40,10 +40,10 @@ export function ImageUpload({ value, onChange }) {
       <div
         onClick={() => inputRef.current?.click()}
         className="
-          flex flex-col items-center justify-center gap-2
-          w-full min-h-[140px] rounded-xl border-2 border-dashed
-          border-primary/40 bg-mint/10
-          cursor-pointer hover:bg-mint/30 hover:border-primary transition-all duration-200
+          flex          flex-col items-center justify-center gap-2
+          w-full min-h-[140px] rounded-lg border-2 border-dashed
+          border-primary/30 bg-mint/10
+          cursor-pointer hover:bg-mint/40 hover:border-primary transition-all duration-200
           relative overflow-hidden group
         "
       >

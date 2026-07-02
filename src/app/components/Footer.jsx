@@ -8,7 +8,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gradient-to-br from-mint via-mint/50 to-background mt-20 pt-16 overflow-hidden border-t border-primary/10">
+    <footer className="relative bg-gradient-to-br from-slate-50 via-mint to-background dark:from-slate-900 dark:via-indigo-950/30 dark:to-slate-900 mt-20 pt-16 overflow-hidden border-t border-primary/10">
       
       {}
       <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-12">
@@ -29,13 +29,13 @@ const Footer = () => {
               Your premium destination for discovering, sharing, and creating delicious healthy recipes. Join our community and elevate your everyday cooking.
             </p>
             <div className="flex space-x-4 pt-2">
-              <a href="#" className="p-2.5 bg-white text-primary rounded-full hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
+              <a href="#" className="p-2.5 bg-white text-primary dark:bg-slate-800 dark:text-indigo-300 rounded-xl hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
                 <LogoFacebook size={18} />
               </a>
-              <a href="#" className="p-2.5 bg-white text-primary rounded-full hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
+              <a href="#" className="p-2.5 bg-white text-primary dark:bg-slate-800 dark:text-indigo-300 rounded-xl hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
                 <X size={18} />
               </a>
-              <a href="#" className="p-2.5 bg-white text-primary rounded-full hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
+              <a href="#" className="p-2.5 bg-white text-primary dark:bg-slate-800 dark:text-indigo-300 rounded-xl hover:bg-primary hover:text-white shadow-sm hover:shadow-md transition-all duration-300">
                 <LogoLinkedin size={18} />
               </a>
             </div>
@@ -93,16 +93,15 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Subscribe to get the latest recipe updates and cooking tips delivered to your inbox.
             </p>
-            <form className="flex flex-col space-y-3" onSubmit={(e) => e.preventDefault()}>
-              <input 
+            <form className="flex flex-col space-y-3" onSubmit={(e) => e.preventDefault()}>                <input 
                 type="email" 
                 placeholder="Your email address" 
-                className="w-full px-4 py-3 rounded-xl bg-white border border-primary/20 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm"
+                className="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-primary/20 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-sm dark:text-white"
                 required
               />
               <button 
                 type="submit" 
-                className="w-full bg-primary text-white font-semibold py-3 rounded-xl hover:bg-primary/90 shadow-sm hover:shadow-md transition-all duration-300"
+                className="w-full bg-primary text-white font-semibold py-3 rounded-xl hover:bg-primary/90 shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/30 transition-all duration-300"
               >
                 Subscribe
               </button>

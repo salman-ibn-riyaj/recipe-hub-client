@@ -105,7 +105,7 @@ const AdminUsersPage = ({ users, searchParams }) => {
 
                     {}
                     <Table.Cell>
-                      <span className="text-xs bg-primary/10 text-primary px-2.5 py-1 rounded font-semibold uppercase">
+                      <span className="text-xs bg-primary/10 text-primary px-2.5 py-1 rounded-lg font-semibold uppercase">
                         {user.plan || "Free"}
                       </span>
                     </Table.Cell>
@@ -120,11 +120,11 @@ const AdminUsersPage = ({ users, searchParams }) => {
                     {}
                     <Table.Cell>
                       {user.role === "admin" ? (
-                        <span className="text-xs bg-purple-100 text-purple-700 px-2.5 py-1 rounded-full font-semibold">
+                        <span className="text-xs bg-purple-100 dark:bg-purple-500/10 text-purple-700 dark:text-purple-400 px-2.5 py-1 rounded-lg font-semibold">
                           Admin
                         </span>
                       ) : (
-                        <span className="text-xs bg-blue-100 text-blue-700 px-2.5 py-1 rounded-full font-semibold">
+                        <span className="text-xs bg-blue-100 dark:bg-blue-500/10 text-blue-700 dark:text-blue-400 px-2.5 py-1 rounded-lg font-semibold">
                           User
                         </span>
                       )}

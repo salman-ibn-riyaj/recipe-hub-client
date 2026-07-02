@@ -23,7 +23,7 @@ export function ToggolBtn() {
     <button
       aria-label="Toggle Theme"
       className={`relative inline-flex items-center h-[31px] w-[51px] rounded-full p-1 transition-colors ${
-        isDark ? "bg-primary shadow-[0_0_12px_rgba(6,182,212,0.5)]" : "bg-secondary"
+        isDark ? "bg-primary shadow-[0_0_12px_rgba(99,102,241,0.4)]" : "bg-slate-300 dark:bg-slate-600"
       }`}
       onClick={() => setTheme(isDark ? "light" : "dark")}
     >
@@ -36,7 +36,7 @@ export function ToggolBtn() {
         {isDark ? (
           <Moon className="size-4 text-primary" />
         ) : (
-          <Sun className="size-4 text-secondary" />
+          <Sun className="size-4 text-amber-500" />
         )}
       </span>
     </button>

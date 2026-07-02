@@ -83,10 +83,10 @@ const SignInPage = () => {
         aria-hidden="true"
       >
         <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-primary/10 blur-[100px]" />
-        <div className="absolute -bottom-40 -left-40 w-[450px] h-[450px] rounded-full bg-accent/20 blur-[90px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-mint/15 blur-[120px]" />
+        <div className="absolute -bottom-40 -left-40 w-[450px] h-[450px] rounded-full bg-secondary/15 blur-[90px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-mint/20 blur-[120px]" />
         <div className="absolute top-1/3 right-1/4 w-[200px] h-[200px] rounded-full bg-primary/5 blur-[60px]" />
-        <div className="absolute bottom-1/3 left-1/4 w-[250px] h-[250px] rounded-full bg-secondary/10 blur-[70px]" />
+        <div className="absolute bottom-1/3 left-1/4 w-[250px] h-[250px] rounded-full bg-primary/8 blur-[70px]" />
       </div>
 
       {}
@@ -102,7 +102,7 @@ const SignInPage = () => {
         className="relative w-full max-w-[600px]"
       >
         {}
-        <div className="glass rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-2xl shadow-primary/5">
+        <div className="glass rounded-xl sm:rounded-2xl p-6 sm:p-10 shadow-xl shadow-primary/5 border border-border/40">
           <Form
             className="flex flex-col gap-5"
             render={(props) => <form {...props} />}
@@ -229,7 +229,7 @@ const SignInPage = () => {
               <Button
                 type="submit"
                 isLoading={loading}
-                className="w-full bg-gradient-to-r from-primary to-secondary text-white font-semibold h-11 rounded-xl 
+                className="w-full bg-gradient-to-r from-primary to-secondary text-white font-semibold h-11 rounded-lg 
                   shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/30 
                   hover:-translate-y-0.5 active:translate-y-0 
                   transition-all duration-200 text-[15px]"
@@ -249,8 +249,8 @@ const SignInPage = () => {
               <Button
                 onClick={handleGoogleLogin}
                 variant="bordered"
-                className="w-full border-border/70 bg-background/30 text-foreground 
-                  hover:bg-mint/30 hover:border-primary/40 font-medium h-11 rounded-xl 
+                className="w-full border-border/60 bg-background/30 text-foreground 
+                  hover:bg-mint/40 hover:border-primary/40 font-medium h-11 rounded-lg 
                   transition-all duration-200 text-[15px]"
               >
                 <Icon icon="devicon:google" className="w-5 h-5 mr-2 shrink-0" />

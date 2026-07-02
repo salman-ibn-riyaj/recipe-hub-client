@@ -23,9 +23,9 @@ const features = [
     title: "Curated Recipes",
     description:
       "Every recipe on RecipeHub is hand-picked and kitchen-tested by our team of culinary experts. No guesswork — just delicious results every time.",
-    color: "text-emerald-500",
-    bgColor: "bg-emerald-50 dark:bg-emerald-500/10",
-    borderColor: "border-emerald-200 dark:border-emerald-500/20",
+    color: "text-primary",
+    bgColor: "bg-mint",
+    borderColor: "border-primary/20",
   },
   {
     icon: Users,
@@ -41,9 +41,9 @@ const features = [
     title: "Personalized Experience",
     description:
       "Save your favorite recipes, like the ones you love, and build a personal collection tailored to your unique taste and dietary preferences.",
-    color: "text-rose-500",
-    bgColor: "bg-rose-50 dark:bg-rose-500/10",
-    borderColor: "border-rose-200 dark:border-rose-500/20",
+    color: "text-secondary",
+    bgColor: "bg-indigo-50 dark:bg-indigo-500/10",
+    borderColor: "border-indigo-200 dark:border-indigo-500/20",
   },
   {
     icon: BookOpen,
@@ -77,9 +77,9 @@ const features = [
     title: "Smart Discovery",
     description:
       "Find exactly what you're craving with powerful search and category filters. Discover new favorites based on cuisine, difficulty, and preparation time.",
-    color: "text-cyan-500",
-    bgColor: "bg-cyan-50 dark:bg-cyan-500/10",
-    borderColor: "border-cyan-200 dark:border-cyan-500/20",
+    color: "text-teal-500",
+    bgColor: "bg-teal-50 dark:bg-teal-500/10",
+    borderColor: "border-teal-200 dark:border-teal-500/20",
   },
   {
     icon: MessageCircle,
@@ -143,11 +143,11 @@ const WhyRecipeHub = ({ user }) => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-background via-secondary/5 to-background py-20 px-4 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-gradient-to-b from-background via-mint/20 to-background py-20 px-4 sm:px-6 lg:px-8">
       {/* Decorative background elements */}
       <div className="absolute top-10 left-0 w-72 h-72 rounded-full bg-primary/[0.04] blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-96 h-96 rounded-full bg-accent/[0.06] blur-3xl pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-mint/30 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-0 w-96 h-96 rounded-full bg-secondary/[0.06] blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/[0.03] blur-3xl pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Section Header */}
@@ -173,7 +173,7 @@ const WhyRecipeHub = ({ user }) => {
 
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-foreground">
             Why{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               RecipeHub
             </span>
             ?
@@ -208,7 +208,7 @@ const WhyRecipeHub = ({ user }) => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="relative group bg-surface rounded-2xl border border-border shadow-soft p-5 md:p-6 text-center hover:shadow-hover hover:-translate-y-1 transition-all duration-300"
+                className="relative group bg-surface rounded-xl border border-border/70 shadow-soft p-5 md:p-6 text-center hover:shadow-hover hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] to-transparent rounded-2xl pointer-events-none" />
                 <div className="relative z-10 flex flex-col items-center gap-2">
@@ -275,8 +275,7 @@ const WhyRecipeHub = ({ user }) => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="mt-16 bg-gradient-to-br from-primary/10 via-surface to-secondary/10 rounded-3xl border border-border shadow-soft p-8 md:p-12 relative overflow-hidden text-center"
+          viewport={{ once: true }}            className="mt-16 bg-gradient-to-br from-primary/5 via-surface to-secondary/5 rounded-2xl border border-border/70 shadow-soft p-8 md:p-12 relative overflow-hidden text-center"
         >
           {/* Decorative blurs */}
           <div className="absolute top-0 right-0 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none" />

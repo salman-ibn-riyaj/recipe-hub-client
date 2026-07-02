@@ -12,11 +12,11 @@ const FavoriteRecipesClient = ({favoriteRecipes}) => {
       <Table.ScrollContainer>
         <Table.Content aria-label="Team members" className="min-w-[600px]">
           <Table.Header >
-            <Table.Column className={'text-primary'} isRowHeader>Recipe Name</Table.Column>
-            <Table.Column className={'text-primary'} >Cuisine Type</Table.Column>
-            <Table.Column className={'text-primary'} >Difficulty Level</Table.Column>
-            <Table.Column className={'text-primary'} >Author Name</Table.Column>
-            <Table.Column className={'text-primary'} >Details | Delete</Table.Column>
+            <Table.Column isRowHeader className="text-primary font-semibold">Recipe Name</Table.Column>
+            <Table.Column className="text-primary font-semibold">Cuisine Type</Table.Column>
+            <Table.Column className="text-primary font-semibold">Difficulty Level</Table.Column>
+            <Table.Column className="text-primary font-semibold">Author Name</Table.Column>
+            <Table.Column className="text-primary font-semibold">Details | Delete</Table.Column>
           </Table.Header>
           <Table.Body>
 

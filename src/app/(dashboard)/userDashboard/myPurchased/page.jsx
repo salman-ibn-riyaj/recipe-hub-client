@@ -15,7 +15,7 @@ const myPurchasedPage = async () => {
   if(purchased.length == 0){{
     return (
       <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center">
-      <div className="max-w-md p-8 bg-white dark:bg-zinc-900 rounded-2xl shadow-xl border border-gray-100 dark:border-zinc-800 transition-all">
+      <div className="max-w-md p-8 bg-surface rounded-2xl shadow-soft border border-border/70 transition-all">
         
         {}
         <div className="w-20 h-20 bg-red-50 dark:bg-red-950/30 text-red-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse">
@@ -23,10 +23,10 @@ const myPurchasedPage = async () => {
         </div>
 
         {}
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-zinc-100 mb-3">
+        <h2 className="text-2xl font-bold text-foreground mb-3">
           No Purchased Recipes Yet
         </h2>
-        <p className="text-gray-500 dark:text-zinc-400 mb-8 max-w-sm text-sm leading-relaxed">
+        <p className="text-muted-foreground mb-8 max-w-sm text-sm leading-relaxed">
           Your Purchased list is currently empty. Explore our collection of delicious recipes and save the ones you love!
         </p>
 

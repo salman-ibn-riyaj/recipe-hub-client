@@ -7,7 +7,7 @@ export default function RecipeCardFeatured({ recipe }) {
   const { recipeName, cuisineType, likesCount, recipeId, _id, recipeImage } = recipe;
 
   return (
-    <Card className="group relative h-[320px] sm:h-[400px] md:h-[550px] overflow-hidden border-none bg-card rounded-3xl shadow-soft hover:shadow-hover hover:-translate-y-2 transition-all duration-300">
+    <Card className="group relative h-[320px] sm:h-[400px] md:h-[550px] overflow-hidden border-none bg-card rounded-2xl shadow-soft hover:shadow-hover hover:-translate-y-2 transition-all duration-300">
       {}
       <div className="absolute inset-0 w-full h-full">
         <Image

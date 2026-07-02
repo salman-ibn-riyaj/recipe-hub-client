@@ -11,13 +11,13 @@ const MostLiked = ({ recipes }) => {
   const getDifficultyColor = (level) => {
     switch (level?.toLowerCase()) {
       case "easy":
-        return "bg-emerald-500/10 text-emerald-500 border-emerald-500/20";
+        return "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20";
       case "medium":
-        return "bg-amber-500/10 text-amber-500 border-amber-500/20";
+        return "bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/20";
       case "hard":
-        return "bg-rose-500/10 text-rose-500 border-rose-500/20";
+        return "bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-500/20";
       default:
-        return "bg-gray-500/10 text-gray-500 border-gray-500/20";
+        return "bg-slate-500/10 text-slate-500 border-slate-500/20";
     }
   };
 
@@ -29,15 +29,17 @@ const MostLiked = ({ recipes }) => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-extrabold tracking-tight text-primary"
+          className="text-3xl md:text-4xl font-extrabold tracking-tight"
         >
-          Our Most Liked Recipes
+          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            Our Most Liked Recipes
+          </span>
         </motion.h2>
         <motion.div
           initial={{ width: 0 }}
           whileInView={{ width: "80px" }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="h-1 bg-primary mx-auto rounded-full"
+          className="h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"
         />
         <p className="text-muted-foreground text-sm max-w-xl mx-auto">
           Discover the most beloved recipes by our community
@@ -56,7 +58,7 @@ const MostLiked = ({ recipes }) => {
           >
             <Link
               href={`/recipes/${recipe._id}`}
-              className="group block bg-surface rounded-2xl border border-border shadow-soft overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-hover"
+              className="group block bg-surface rounded-xl border border-border/80 shadow-soft overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-hover"
             >
               {}
               <div className="relative w-full aspect-video overflow-hidden">

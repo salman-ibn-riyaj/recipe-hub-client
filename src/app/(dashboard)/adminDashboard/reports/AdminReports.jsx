@@ -77,10 +77,10 @@ const AdminReports = ({ reports = [] }) => {
               {reports.map((report) => (
                 <Table.Row 
                   key={report._id} 
-                  className="border-b border-gray-100 dark:border-gray-800 last:border-none hover:bg-gray-50/50 transition-colors"
+                  className="border-b border-border/50 last:border-none hover:bg-mint/20 transition-colors"
                 >
                   {}
-                  <Table.Cell className="font-medium text-gray-900 dark:text-white">
+                  <Table.Cell className="font-medium text-foreground">
                     {report.recipeName}
                   </Table.Cell>
                   

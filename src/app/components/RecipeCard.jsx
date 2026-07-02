@@ -7,7 +7,7 @@ export default function RecipeCard({ recipe }) {
   const { recipeName, cuisineType, likesCount, _id, recipeImage } = recipe;
 
   return (
-    <Card className="group relative h-[320px] sm:h-[380px] md:h-[420px] overflow-hidden border-none bg-card rounded-3xl shadow-soft hover:shadow-hover hover:-translate-y-2 transition-all duration-300">
+    <Card className="group relative h-[320px] sm:h-[380px] md:h-[420px] overflow-hidden border-none bg-card rounded-2xl shadow-soft hover:shadow-hover hover:-translate-y-2 transition-all duration-300">
       {}
       <div className="absolute inset-0 w-full h-full">
         <Image

@@ -63,7 +63,7 @@ export function ReportRecipe({ user, recipe }) {
         className="text-muted hover:text-primary transition-colors"
         onClick={() => setIsOpen(true)} 
       >
-        <TriangleExclamationFill className="w-6 h-6 fill-primary text-primary" />
+        <TriangleExclamationFill className="w-6 h-6 fill-primary/70 text-primary" />
       </Button>
 
       <Modal.Backdrop>
@@ -73,8 +73,8 @@ export function ReportRecipe({ user, recipe }) {
             
             {}
             <Modal.Header>
-              <Modal.Icon className="bg-background text-accent-soft-foreground">
-                <TriangleExclamationFill className="w-6 h-6 bg-transparent fill-primary text-primary" />
+              <Modal.Icon className="bg-mint text-mint-foreground">
+                <TriangleExclamationFill className="w-6 h-6" />
               </Modal.Icon>
               <Modal.Heading>Report Recipe</Modal.Heading>
               <p className="mt-1.5 text-sm leading-5 text-muted">

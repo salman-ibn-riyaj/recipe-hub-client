@@ -26,9 +26,9 @@ const RecipeList = ({ totalData, currentPage, size }) => {
   if (totalPages <= 1) return null;
 
   return (
-   <div className="flex flex-col sm:flex-row items-center justify-between gap-4 w-11/12 mx-auto border-t border-divider pt-4 mt-6">
+   <div className="flex flex-col sm:flex-row items-center justify-between gap-4 w-11/12 mx-auto border-t border-border/50 pt-4 mt-6">
       {}
-      <div className="text-sm text-default-500">
+      <div className="text-sm text-muted-foreground">
         Showing <span className="font-semibold text-foreground">{startItem}</span> to{" "}
         <span className="font-semibold text-foreground">{endItem}</span> of{" "}
         <span className="font-semibold text-foreground">{totalItems}</span> recipes

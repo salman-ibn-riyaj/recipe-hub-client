@@ -111,11 +111,11 @@ export function EditRecipe({recipe, user}) {
   return (
     <div className="w-full">
      <Modal>
-      <Button className={'bg-mint hover:bg-primary hover:text-white text-primary rounded-full transition-colors'} isIconOnly><Pencil className='w-4 h-4' /></Button>
+      <Button className={'bg-mint hover:bg-primary hover:text-white text-mint-foreground rounded-xl transition-colors border border-primary/10'} isIconOnly><Pencil className='w-4 h-4' /></Button>
       <Modal.Backdrop>
         <Modal.Container placement="auto">
           <Modal.Dialog className="max-w-5xl rounded-3xl overflow-hidden border border-border">
-            <Modal.CloseTrigger className="top-4 right-4 bg-mint text-primary rounded-full hover:bg-primary hover:text-white transition-colors" />
+            <Modal.CloseTrigger className="top-4 right-4 bg-mint text-mint-foreground rounded-xl hover:bg-primary hover:text-white transition-colors" />
             <Modal.Header className="bg-surface border-b border-border p-6 flex items-center gap-3">
               <div className="bg-mint p-2 rounded-full">
                 <Pencil className="size-5 text-primary" />

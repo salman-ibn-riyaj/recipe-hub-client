@@ -9,7 +9,9 @@ export default function Banner() {
     <section className="relative overflow-hidden bg-gradient-to-br from-mint via-background to-background min-h-[90vh] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8">
       {}
       <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-primary/5 blur-3xl" />
+      <div className="absolute -top-40 right-20 w-[500px] h-[500px] rounded-full bg-primary/[0.03] blur-[100px]" />
       <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-accent/10 blur-3xl" />
+      <div className="absolute top-1/3 -left-20 w-72 h-72 rounded-full bg-secondary/5 blur-3xl" />
 
       <div className="relative z-10 mx-auto grid max-w-7xl w-full grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {}
@@ -20,7 +22,7 @@ export default function Banner() {
           transition={{ duration: 0.8 }}
         >
           <motion.div
-            className="inline-flex items-center gap-2 rounded-full border border-mint bg-surface px-4 py-2 shadow-sm"
+            className="inline-flex items-center gap-2 rounded-xl border border-primary/20 bg-surface px-4 py-2 shadow-sm"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
@@ -34,7 +36,7 @@ export default function Banner() {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
             Discover Food,
             <br />
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary via-secondary to-indigo-300 bg-clip-text text-transparent">
               Eat & Live Happy
             </span>
           </h1>
@@ -47,8 +49,8 @@ export default function Banner() {
           <div className="mt-4 flex flex-col sm:flex-row gap-4">
             <Link href="/recipes">
               <Button
-                radius="full"
-                className="bg-primary px-8 py-6 text-lg font-bold text-white"
+                radius="lg"
+                className="bg-primary px-8 py-6 text-lg font-bold text-white shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/25"
               >
                 Explore Recipes
               </Button>
@@ -56,9 +58,9 @@ export default function Banner() {
 
             <Link href="/signup">
               <Button
-                radius="full"
+                radius="lg"
                 variant="bordered"
-                className="border-primary/30 px-8 py-6 text-lg font-bold text-primary hover:bg-mint"
+                className="border-primary/30 px-8 py-6 text-lg font-bold text-primary hover:bg-mint hover:border-primary/60"
               >
                 Join Community
               </Button>

@@ -16,7 +16,7 @@ export function MobileNavbar({navLinks}) {
      <Dropdown>
       <Button 
         aria-label="Menu"
-        className="bg-mint text-primary rounded-full hover:bg-primary hover:text-white transition-all duration-300 shadow-sm min-w-0 px-3"
+        className="bg-mint text-mint-foreground rounded-xl hover:bg-primary hover:text-white transition-all duration-300 shadow-sm min-w-0 px-3 border border-primary/10"
       >
         <BarsUnaligned />
       </Button>

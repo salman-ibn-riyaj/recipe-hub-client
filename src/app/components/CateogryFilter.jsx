@@ -49,7 +49,7 @@ const CategoryFilter = ({category}) => {
   return (
      <div>
          <Select className="w-[256px]" placeholder={"Select One"}>
-      <Label className='font-extralight text-xl text-primary text-center'>Category</Label>
+      <Label className='font-medium text-sm text-muted-foreground text-center'>Category</Label>
       <Select.Trigger>
         <Select.Value />
         <Select.Indicator />

@@ -66,7 +66,7 @@ export default function ProfileCard({ user }) {
   return (
     <div className="bg-background text-foreground flex flex-col lg:flex-row items-stretch justify-center gap-6 p-4 max-w-6xl mx-auto min-h-[500px] transition-colors duration-200">
       {}
-      <Card className="flex-1 flex flex-col justify-between bg-surface border border-border rounded-3xl shadow-soft p-2 sm:p-4">
+      <Card className="flex-1 flex flex-col justify-between bg-surface border border-border/70 rounded-2xl shadow-soft p-2 sm:p-4">
         <div className="w-full">
           <Card.Header className="flex flex-col sm:flex-row gap-6 items-center sm:items-start justify-between w-full p-4 sm:p-6 border-b border-border/50">
             <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start w-full text-center sm:text-left">
@@ -84,7 +84,7 @@ export default function ProfileCard({ user }) {
 
               <div className="space-y-3 mt-2 sm:mt-4">
                 <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3">
-                  <h2 className="text-3xl font-bold tracking-tight text-foreground">
+                        <h2 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                     {userData?.name}
                   </h2>
                   {userData?.plan === "free" ? (

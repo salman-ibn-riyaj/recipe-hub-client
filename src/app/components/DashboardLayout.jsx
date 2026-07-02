@@ -42,7 +42,7 @@ const DashboardLayout = ({user}) => {
             href={href}
             className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 font-medium ${
               isActive 
-                ? "bg-mint text-primary shadow-sm" 
+                ? "bg-mint text-mint-foreground shadow-sm border border-primary/10" 
                 : "text-muted-foreground hover:bg-mint/50 hover:text-primary"
             }`}
           >
@@ -57,7 +57,7 @@ const DashboardLayout = ({user}) => {
   return (
     <div className="fixed left-0 top-0 z-40 flex h-screen">
       {}
-      <aside className="hidden md:flex flex-col justify-between bg-surface border-r border-border h-full w-72 shadow-sm relative z-20">
+      <aside className="hidden md:flex flex-col justify-between bg-surface border-r border-border/70 h-full w-72 shadow-xs relative z-20">
         
         <div className="flex flex-col h-full overflow-y-auto custom-scrollbar">
           {}
@@ -95,7 +95,7 @@ const DashboardLayout = ({user}) => {
                 {user.email}
               </span>
             </div>
-            <div className="ml-auto flex items-center justify-center bg-mint text-primary text-[10px] uppercase font-bold px-2 py-1 rounded-md tracking-wider">
+            <div className="ml-auto flex items-center justify-center bg-mint text-mint-foreground text-[10px] uppercase font-bold px-2 py-1 rounded-md tracking-wider border border-primary/10">
               {user.role}
             </div>
           </div>

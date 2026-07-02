@@ -30,61 +30,61 @@ const userDashboard = async () => {
       </div>
 
       {/* Stats Cards */}
-      <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6 bg-background rounded-2xl border border-border">
-        <div className="bg-primary/20 border border-border rounded-xl p-5 flex items-center justify-between shadow-sm transition-all hover:shadow-md">
+      <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6 bg-background rounded-2xl">
+        <div className="bg-surface border border-border/70 rounded-xl p-5 flex items-center justify-between shadow-soft transition-all hover:shadow-hover hover:-translate-y-0.5">
           <div>
-            <p className="text-sm font-medium text-foreground">Total Recipes</p>
+            <p className="text-sm font-medium text-muted-foreground">Total Recipes</p>
             <h3 className="text-2xl font-bold text-foreground mt-1">
               {recipes.length}
             </h3>
           </div>
-          <div className="p-3 bg-[#f99f1d]/10 rounded-lg text-[#f99f1d]">
+          <div className="p-3 bg-mint rounded-lg text-primary">
             <ChefHat className="w-6 h-6" />
           </div>
         </div>
 
-        <div className="bg-primary/20 border border-border rounded-xl p-5 flex items-center justify-between shadow-sm transition-all hover:shadow-md">
+        <div className="bg-surface border border-border/70 rounded-xl p-5 flex items-center justify-between shadow-soft transition-all hover:shadow-hover hover:-translate-y-0.5">
           <div>
-            <p className="text-sm font-medium text-foreground">
+            <p className="text-sm font-medium text-muted-foreground">
               Favorite Recipes
             </p>
             <h3 className="text-2xl font-bold text-foreground mt-1">
               {favoriteRecipes.length}
             </h3>
           </div>
-          <div className="p-3 bg-red-500/20 rounded-lg text-red-500">
+          <div className="p-3 bg-rose-50 dark:bg-rose-500/10 rounded-lg text-rose-500">
             <Heart className="w-6 h-6 fill-current" />
           </div>
         </div>
 
-        <div className="bg-primary/20 border border-border rounded-xl p-5 flex items-center justify-between shadow-sm transition-all hover:shadow-md">
+        <div className="bg-surface border border-border/70 rounded-xl p-5 flex items-center justify-between shadow-soft transition-all hover:shadow-hover hover:-translate-y-0.5">
           <div>
-            <p className="text-sm font-medium text-foreground">Total Likes</p>
+            <p className="text-sm font-medium text-muted-foreground">Total Likes</p>
             <h3 className="text-2xl font-bold text-foreground mt-1">
               {user.likesCount}
             </h3>
           </div>
-          <div className="p-3 bg-blue-500/20 rounded-lg text-blue-500">
+          <div className="p-3 bg-blue-50 dark:bg-blue-500/10 rounded-lg text-blue-500">
             <ThumbsUp className="w-6 h-6" />
           </div>
         </div>
 
-        <div className="bg-primary/20 border border-border rounded-xl p-5 flex items-center justify-between shadow-sm transition-all hover:shadow-md">
+        <div className="bg-surface border border-border/70 rounded-xl p-5 flex items-center justify-between shadow-soft transition-all hover:shadow-hover hover:-translate-y-0.5">
           <div>
-            <p className="text-sm font-medium text-foreground">Membership</p>
+            <p className="text-sm font-medium text-muted-foreground">Membership</p>
             <div className="mt-2">
               {user.plan === "Recipehub_Premium" ? (
-                <span className="inline-flex items-center gap-1 px-3 py-1 text-xs font-semibold rounded-full bg-[#f99f1d] text-white shadow-sm">
+                <span className="inline-flex items-center gap-1 px-3 py-1 text-xs font-semibold rounded-lg bg-gradient-to-r from-amber-400 to-amber-500 text-white shadow-sm">
                   <Crown className="w-3 h-3" /> Premium
                 </span>
               ) : (
-                <span className="inline-flex items-center gap-1 px-3 py-1 text-xs font-semibold rounded-full bg-[#3d403f] text-white">
+                <span className="inline-flex items-center gap-1 px-3 py-1 text-xs font-semibold rounded-lg bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
                   Regular
                 </span>
               )}
             </div>
           </div>
-          <div className="p-3 bg-[#3d403f]/10 rounded-lg text-foreground">
+          <div className="p-3 bg-mint rounded-lg text-primary">
             <UserCheck className="w-6 h-6" />
           </div>
         </div>

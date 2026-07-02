@@ -41,31 +41,31 @@ const AdminRecipes = ({recipes, user}) => {
                   <Table.Cell>
                     <div className="flex items-center gap-3">
                     
-                      <span className="font-medium text-slate-700 capitalize">{recipe?.recipeName}</span>
+                      <span className="font-medium text-foreground capitalize">{recipe?.recipeName}</span>
                     </div>
                   </Table.Cell>
 
                   {}
-                  <Table.Cell className="text-slate-600">{recipe?.category}</Table.Cell>
+                  <Table.Cell className="text-muted-foreground">{recipe?.category}</Table.Cell>
 
                   {}
-                  <Table.Cell className="text-slate-600">{recipe?.cuisineType}</Table.Cell>
+                  <Table.Cell className="text-muted-foreground">{recipe?.cuisineType}</Table.Cell>
 
                   {}
                   <Table.Cell>
                     <div className="flex flex-col">
-                      <span className="text-sm font-medium text-slate-700">{recipe?.authorName}</span>
-                      <span className="text-xs text-slate-400">{recipe?.authorEmail}</span>
+                      <span className="text-sm font-medium text-foreground">{recipe?.authorName}</span>
+                      <span className="text-xs text-muted-foreground">{recipe?.authorEmail}</span>
                     </div>
                   </Table.Cell>
 
                   {}
-                  <Table.Cell className="text-slate-600 font-mono">{recipe?.preparationTime}</Table.Cell>
+                  <Table.Cell className="text-muted-foreground font-mono">{recipe?.preparationTime}</Table.Cell>
 
                   {}
                   <Table.Cell>
-                    <span className={`text-xs px-2.5 py-1 rounded-full font-semibold capitalize ${
-                      recipe?.status === 'published' ? 'bg-green-100 text-green-700' : 'bg-slate-100 text-slate-600'
+                    <span className={`text-xs px-2.5 py-1 rounded-lg font-semibold capitalize ${
+                      recipe?.status === 'published' ? 'bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400'
                     }`}>
                       {recipe?.status}
                     </span>
@@ -90,8 +90,8 @@ const AdminRecipes = ({recipes, user}) => {
                         }
                           
                          }
-                        className={`p-1.5 bg-white hover:bg-slate-100 rounded-lg transition-colors ${
-                          recipe.isFeatured ? 'text-amber-500' : 'text-slate-400 hover:text-amber-500'
+                        className={`p-1.5 bg-surface hover:bg-mint rounded-lg transition-colors border border-border/40 ${
+                          recipe.isFeatured ? 'text-amber-500' : 'text-muted-foreground hover:text-amber-500'
                         }`}
                       >
                         {recipe.isFeatured ? <StarFill width={16} height={16} /> : <Star width={16} height={16} />}

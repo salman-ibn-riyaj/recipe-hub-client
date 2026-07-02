@@ -116,7 +116,7 @@ const handleLike = async () => {
           className="text-muted hover:text-primary transition-colors"
           onClick={handleLike}
         >
-          <ThumbsUpFill className="w-6 h-6 fill-primary text-primary" />
+          <ThumbsUpFill className="w-6 h-6 fill-primary/70 text-primary" />
         </Button>
       </Tooltip.Trigger>
       <Tooltip.Content>
@@ -134,7 +134,7 @@ const handleLike = async () => {
           variant="light"
           className="text-muted hover:text-primary transition-colors"
         >
-          <Heart className="w-6 h-6 fill-primary text-primary" />
+          <Heart className="w-6 h-6 fill-primary/70 text-primary" />
         </Button>
       </Tooltip.Trigger>
       <Tooltip.Content>

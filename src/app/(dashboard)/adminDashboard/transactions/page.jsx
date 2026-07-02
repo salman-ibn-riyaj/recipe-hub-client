@@ -44,13 +44,13 @@ const AdminTransactionsPage = () => {
   
   if (!hasSubscriptions && !hasPurchased) {
     return (
-      <div className="max-w-md mx-auto mt-20 p-8 bg-white border border-slate-200 rounded-2xl text-center shadow-sm space-y-4">
+      <div className="max-w-md mx-auto mt-20 p-8 bg-surface border border-border/70 rounded-2xl text-center shadow-soft space-y-4">
         <div className="w-12 h-12 bg-amber-50 text-amber-500 rounded-full flex items-center justify-center mx-auto">
           <AlertCircle size={24} />
         </div>
         <div>
-          <h3 className="text-slate-800 font-semibold text-lg">No Transactions Found</h3>
-          <p className="text-slate-500 text-sm mt-1">There are currently no active subscriptions or purchase history available.</p>
+          <h3 className="text-foreground font-semibold text-lg">No Transactions Found</h3>
+          <p className="text-muted-foreground text-sm mt-1">There are currently no active subscriptions or purchase history available.</p>
         </div>
       </div>
     );
@@ -71,15 +71,14 @@ const AdminTransactionsPage = () => {
   );
 
   return (
-    <div className="p-6 max-w-6xl mx-auto space-y-12 bg-slate-50 min-h-screen">
+    <div className="p-6 max-w-6xl mx-auto space-y-12">
       
       {}
-      {hasSubscriptions && (
-        <div className="space-y-4 bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-          <div className="flex items-center space-x-2 text-slate-800 font-bold text-lg mb-2">
-            <CreditCard className="w-5 h-5 text-blue-500" />
-            <h2>Subscriptions ({subscriptions.length})</h2>
-          </div>
+      {hasSubscriptions && (          <div className="space-y-4 bg-surface p-6 rounded-xl border border-border/70 shadow-soft">
+            <div className="flex items-center space-x-2 text-foreground font-bold text-lg mb-2">
+              <CreditCard className="w-5 h-5 text-primary" />
+              <h2>Subscriptions ({subscriptions.length})</h2>
+            </div>
           
           <Table>
             <Table.Content aria-label="Subscriptions">
@@ -143,12 +142,11 @@ const AdminTransactionsPage = () => {
       )}
 
       {}
-      {hasPurchased && (
-        <div className="space-y-4 bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-          <div className="flex items-center space-x-2 text-slate-800 font-bold text-lg mb-2">
-            <ShoppingBag className="w-5 h-5 text-emerald-500" />
-            <h2>Purchased Data ({purchasedData.length})</h2>
-          </div>
+      {hasPurchased && (          <div className="space-y-4 bg-surface p-6 rounded-xl border border-border/70 shadow-soft">
+            <div className="flex items-center space-x-2 text-foreground font-bold text-lg mb-2">
+              <ShoppingBag className="w-5 h-5 text-primary" />
+              <h2>Purchased Data ({purchasedData.length})</h2>
+            </div>
 
           <Table>
             <Table.Content aria-label="Purchased Data">

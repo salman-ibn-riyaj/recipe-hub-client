@@ -313,7 +313,7 @@ const onSubmit = async (e) => {
         <div className="flex flex-col sm:flex-row justify-end items-center gap-4 mt-6">
           <Button 
             type="reset" 
-            className="w-full sm:w-auto bg-surface border-2 border-border text-foreground font-semibold px-8 py-6 rounded-xl hover:bg-muted/10 transition-all"
+            className="w-full sm:w-auto bg-surface border-2 border-border/60 text-foreground font-semibold px-8 py-6 rounded-xl hover:bg-mint/30 transition-all"
           >
             Cancel
           </Button>

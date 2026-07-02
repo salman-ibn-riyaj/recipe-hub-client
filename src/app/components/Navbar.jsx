@@ -31,7 +31,7 @@ const Navbar =  ({user})  => {
     })
   }
   return (
-    <header className="sticky top-0 z-50 w-full bg-surface/80 backdrop-blur-2xl border-b border-border/50 shadow-sm transition-all duration-300">
+    <header className="sticky top-0 z-50 w-full bg-surface/80 backdrop-blur-xl border-b border-border/40 shadow-xs transition-all duration-300">
       <div className='flex justify-between items-center w-11/12 mx-auto gap-2 sm:gap-4 py-3 px-2'>
         <div className='block md:hidden flex-shrink-0'>
             <MobileNavbar navLinks={navLinks} />
@@ -49,7 +49,7 @@ const Navbar =  ({user})  => {
           </Link>
         </div>
         
-        <nav className='space-x-2 hidden md:flex items-center bg-surface/50 px-2 py-1 rounded-full border border-border/50 shadow-[0_2px_10px_rgba(0,0,0,0.02)]'>
+        <nav className='space-x-1 hidden md:flex items-center bg-slate-50/80 dark:bg-slate-800/50 px-1.5 py-1 rounded-xl border border-slate-200/60 dark:border-slate-700/50 shadow-[0_1px_3px_rgba(99,102,241,0.06)]'>
             {navLinks.map( ({label, href}) => <NavLink key={href} label={label} href={href}></NavLink> )} 
         </nav>
         
@@ -57,13 +57,13 @@ const Navbar =  ({user})  => {
           {user ? 
               <div className='hidden md:flex space-x-3 items-center justify-center'>
                 <Link 
-                  className='text-foreground hover:text-primary font-medium text-sm transition-colors' 
+                  className='text-foreground/80 hover:text-primary font-medium text-sm transition-colors' 
                   href={'/profile'}
                 >
                   Profile
                 </Link>
                 <button 
-                  className='bg-mint text-primary px-5 py-2 rounded-full font-semibold text-sm hover:bg-primary hover:text-white transition-all duration-300 shadow-sm' 
+                  className='bg-mint text-mint-foreground px-5 py-2 rounded-xl font-medium text-sm hover:bg-primary hover:text-white transition-all duration-300 shadow-sm border border-primary/10' 
                   onClick={async() => {
                     await authClient.signOut();
                     window.location.href = '/signin';
@@ -75,13 +75,13 @@ const Navbar =  ({user})  => {
           :
           <div className='hidden md:flex items-center space-x-3'>
             <Link 
-              className='text-foreground hover:text-primary font-medium text-sm transition-colors' 
+              className='text-foreground/80 hover:text-primary font-medium text-sm transition-colors' 
               href={'/signin'}
             >
               Log in
             </Link>
             <Link 
-              className='bg-primary px-5 py-2 rounded-full font-semibold text-sm text-white hover:shadow-hover hover:-translate-y-0.5 transition-all duration-300' 
+              className='bg-primary px-5 py-2 rounded-xl font-semibold text-sm text-white hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 border border-primary/10' 
               href={'/signup'}
             >
               Sign up

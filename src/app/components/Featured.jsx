@@ -49,7 +49,7 @@ const Featured = ({ recipes = [] }) => {
   if (!recipes || recipes.length === 0) return null;
 
   return (
-    <div className="w-full py-10 overflow-hidden bg-gradient-to-b from-transparent to-amber-50/20">
+    <div className="w-full py-10 overflow-hidden bg-gradient-to-b from-transparent to-slate-50/50 dark:to-slate-900/30">
       
       {}
       <div className="text-center mb-10 space-y-2">
@@ -65,7 +65,7 @@ const Featured = ({ recipes = [] }) => {
           initial={{ width: 0 }}
           whileInView={{ width: "80px" }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="h-1 bg-amber-500 mx-auto rounded-full"
+          className="h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"
         />
       </div>
 
