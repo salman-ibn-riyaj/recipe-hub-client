@@ -22,6 +22,7 @@ export default function Loading() {
           </div>
         </div>
 
+
         <div className="text-center space-y-3">
           <p className="text-xl font-bold tracking-tight">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
