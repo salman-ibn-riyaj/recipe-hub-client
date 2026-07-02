@@ -50,3 +50,22 @@ RecipeHub is a modern full-stack recipe sharing platform where food lovers can d
 - Vercel
 
 ---
+# 📂 Project Structure
+
+```text
+RecipeHub/
+│
+├── app/
+├── components/
+├── hooks/
+├── lib/
+├── models/
+├── actions/
+├── providers/
+├── public/
+├── styles/
+├── middleware.ts
+└── package.json
+```
+
+---
