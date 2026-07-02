@@ -69,3 +69,24 @@ RecipeHub/
 ```
 
 ---
+# 🚀 Getting Started
+
+## Clone Repository
+
+```bash
+git clone https://github.com/your-username/recipe-hub-client.git
+```
+
+## Navigate to Project
+
+```bash
+cd recipe-hub-client
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+---
